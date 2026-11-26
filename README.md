@@ -90,19 +90,8 @@ When finished, the script prints the number of files written and the skip and fa
 - Writing millions of small files is often limited by disk and antivirus scanning. On Windows, excluding the output folder from real-time scanning can speed up writing.
 - If the machine becomes unresponsive during a run, lower `--workers`.
 
-## Inspecting a ZIM
-
-`zim_inspect.py` prints a table of entries (id, redirect, type, size, number of text lines, path, title) and saves the raw HTML of the first entry that converts to one line of text or less. Keep it in the same folder as `zim_to_txt.py`.
-
-```
-python zim_inspect.py wikipedia.zim [start] [count]
-```
-
-`start` defaults to 0 and `count` to 60. The raw HTML is saved to `inspect_sample.html` in the current folder.
-
 ## Files
 
 | File | Purpose |
 |---|---|
 | `zim_to_txt.py` | The converter. |
-| `zim_inspect.py` | Entry inspector. |
