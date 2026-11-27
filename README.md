@@ -1,5 +1,7 @@
 # zim-to-txt
 
+Images are not supported at the moment.
+
 Two separate Python converters for turning a `.zim` archive (for example, a Kiwix dump) into individual plain-text files. Both write one `.txt` file per supported entry into a single output folder and support multiprocessing.
 
 There are two versions to choose from:
